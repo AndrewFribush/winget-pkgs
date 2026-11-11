@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+PackageIdentifier: TokenPylon.TokenPylon
+PackageVersion: 0.6.35
+InstallerType: zip
+NestedInstallerType: portable
+Commands:
+  - tokenpylon
+ReleaseDate: 2026-11-11
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v0.6.35/tokenpylon_0.6.35_windows_amd64.zip
+    InstallerSha256: D2BD3C3DCDB139378748EABA4C165E0B34467626D11EE163F1F215577FF8815D
+    NestedInstallerFiles:
+      - RelativeFilePath: tokenpylon_0.6.35_windows_amd64\tokenpylon.exe
+        PortableCommandAlias: tokenpylon
+  - Architecture: arm64
+    InstallerUrl: https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v0.6.35/tokenpylon_0.6.35_windows_arm64.zip
+    InstallerSha256: 4D06AFA0AE6A986D380328793C6A141F2DDB7F266D43BA529A2608BBD0D64705
+    NestedInstallerFiles:
+      - RelativeFilePath: tokenpylon_0.6.35_windows_arm64\tokenpylon.exe
+        PortableCommandAlias: tokenpylon
+ManifestType: installer
+ManifestVersion: 1.6.0
